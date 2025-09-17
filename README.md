@@ -61,73 +61,12 @@ This makes the project scalable, robust, and production-ready.
 
 
 
+    
 
 
-Requirements
-Python 3.13
-
-Virtual environment recommended
-Install dependencies:
-
-pip install -r requirements.txt
-How to Run
-
-Clone the repository:
-
-git clone https://github.com/your-username/Carbon-AI.git
-cd Carbon-AI
 
 
-Run the agent:
 
-python agent.py --target icici
-Launch the Streamlit UI (optional):
-streamlit run app.py
-
-
-Run tests:
-
-pytest
-
-Demo
-<p align="center"> <img src="https://github.com/vc-dhanush/Karbon-ai-challenge" width="600" /> </p>
-Key Learnings
-
-Designing autonomous agents with retry/self-correcting loops
-
-Handling inconsistent PDF layouts
-
-Building extensible, modular architectures
-
-Importance of validation, testing, and clean documentation
-
-Conclusion
-
-Carbon AI showcases practical AI workflow design, modular architecture, and automation skills.
-
-It demonstrates the ability to plan, implement, and deliver real-world solutions, making it a strong project for HRs and interviewers to evaluate.
-
-<p align="center">Built with dedication by <b>Dhanush</b></p> ```
-Flow of Work
-```mermaid
-flowchart TD
-    style A fill:#7FFFD4,stroke:#333,stroke-width:2px,color:#000
-    style B fill:#FFD700,stroke:#333,stroke-width:2px,color:#000
-    style C fill:#FFB6C1,stroke:#333,stroke-width:2px,color:#000
-    style D fill:#87CEFA,stroke:#333,stroke-width:2px,color:#000
-    style E fill:#98FB98,stroke:#333,stroke-width:2px,color:#000
-    style F fill:#FFA07A,stroke:#333,stroke-width:2px,color:#000
-    style G fill:#DA70D6,stroke:#333,stroke-width:2px,color:#000
-    style H fill:#FF69B4,stroke:#333,stroke-width:2px,color:#000
-
-    A[User uploads bank statement PDF] --> B[Parser generator]
-    B --> C[Extract transactions using Camelot pdfplumber]
-    C --> D[Validation layer - check schema CSV]
-    D --> E{Parsing successful?}
-    E -- Yes --> F[Save and export clean data CSV JSON]
-    E -- No --> G[Retry with self-debug loop]
-    G --> H[Adjust parser parameters fallback method]
-    H --> B
 ```
 Requirements
 Python 3.13
