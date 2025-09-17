@@ -160,3 +160,42 @@ flowchart TD
     E -- No --> G[Retry with self-debug loop]
     G --> H[Adjust parser parameters fallback method]
     H --> B
+```
+Requirements
+Python 3.13
+
+Virtual environment recommended
+Install dependencies:
+pip install -r requirements.txt
+
+How to Run
+Clone the repository:
+
+git clone https://github.com/your-username/Carbon-AI.git
+cd Carbon-AI
+
+
+Run the agent:
+python agent.py --target icici
+
+
+Launch the Streamlit UI (optional):
+streamlit run app.py
+
+
+Run tests:
+pytest
+
+Demo
+Key Learnings
+Designing autonomous agents with retry/self-correcting loops
+Handling inconsistent PDF layouts
+Building extensible, modular architectures
+Importance of validation, testing, and clean documentation
+
+Conclusion
+
+Carbon AI showcases practical AI workflow design, modular architecture, and automation skills.
+It demonstrates the ability to plan, implement, and deliver real-world solutions, making it a strong project for HRs and interviewers to evaluate.
+Built with dedication by    
+                           `~Vc Dhanush
