@@ -73,10 +73,10 @@ flowchart TD
     style H fill:#FF69B4,stroke:#333,stroke-width:2px,color:#000
 
     A[User uploads bank statement PDF] --> B[Parser generator]
-    B --> C[Extract transactions using Camelot/pdfplumber]
-    C --> D[Validation layer (check schema/CSV)]
+    B --> C[Extract transactions using Camelot pdfplumber]
+    C --> D[Validation layer - check schema CSV]
     D --> E{Parsing successful?}
-    E -- Yes --> F[Save and export clean data (CSV/JSON)]
+    E -- Yes --> F[Save and export clean data CSV JSON]
     E -- No --> G[Retry with self-debug loop]
-    G --> H[Adjust parser parameters / fallback method]
+    G --> H[Adjust parser parameters fallback method]
     H --> B
