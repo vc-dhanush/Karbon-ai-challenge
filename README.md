@@ -1,65 +1,65 @@
-# 🌟 Carbon AI – Intelligent Bank Statement Parser Agent
+# Carbon AI – Intelligent Bank Statement Parser Agent
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge&logo=python" />
   <img src="https://img.shields.io/badge/Framework-LangGraph%20%7C%20Streamlit-green?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Focus-AI%20%26%20Automation-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Focus-AI%20and%20Automation-orange?style=for-the-badge" />
 </p>
 
 ---
 
-## 📖 Introduction  
+## Introduction  
 
-Bank statements are one of the most common documents in finance, but **manually extracting, validating, and formatting the data is slow and error-prone**.  
+Bank statements are one of the most common documents in finance, but manually extracting, validating, and formatting the data is slow and error-prone.  
 
-**Carbon AI** is my solution to this problem: an **autonomous parsing agent** that can:  
+**Carbon AI** is an autonomous parsing agent that can:  
 
 - Read PDF statements (bank-specific formats)  
 - Extract structured transaction data  
-- Validate it against expected schema/CSV  
+- Validate it against expected schema or CSV  
 - Retry automatically if errors occur  
 
-This project demonstrates **AI workflow design, clean software architecture, and practical automation skills**, making it ideal for HRs or interviewers to assess problem-solving abilities.
+This project demonstrates AI workflow design, clean software architecture, and practical automation skills.
 
 ---
 
-## 🌟 Project Overview  
+## Project Overview  
 
-Rather than building a parser for a single bank, I created an **extensible, modular architecture**:  
+Rather than building a parser for a single bank, an **extensible modular architecture** was created:  
 
 - Each bank has its **own parser module** (plug-and-play).  
 - If parsing fails, the agent retries using different strategies (`camelot`, `pdfplumber`, fallback methods).  
 - A **validation layer** ensures extracted data matches expectations.  
-- Streamlit UI provides a **simple and interactive interface**.  
+- Streamlit UI provides a simple and interactive interface.  
 
-This makes the project **scalable, robust, and production-ready**.
+This makes the project scalable, robust, and production-ready.
 
 ---
 
-## 🎯 Objectives  
+## Objectives  
 
 - Automate repetitive financial data extraction  
-- Demonstrate AI agent capabilities with **self-debugging loops**  
+- Demonstrate AI agent capabilities with self-debugging loops  
 - Deliver a clean, modular architecture  
-- Build a project that HRs & Interviewers can quickly understand and appreciate  
+- Build a project that HRs and interviewers can quickly understand and appreciate  
 
 ---
 
-## 🛠 Tech Stack  
+## Tech Stack  
 
-- **Language:** Python **3.13**  
+- **Language:** Python 3.13  
 - **Frameworks:** LangGraph (workflow/agent), Streamlit (UI)  
 - **Libraries:**  
   - `camelot`, `pdfplumber` → PDF parsing  
-  - `pandas` → Data handling & validation  
+  - `pandas` → Data handling and validation  
   - `pytest` → Testing  
-- **Version Control:** Git + GitHub  
+- **Version Control:** Git and GitHub  
 - **Editor:** VS Code  
 
 ---
 
-## 🔄 Flow of Work  
+## Flow of Work  
 
 ```mermaid
 flowchart TD
@@ -72,11 +72,11 @@ flowchart TD
     style G fill:#DA70D6,stroke:#333,stroke-width:2px,color:#000
     style H fill:#FF69B4,stroke:#333,stroke-width:2px,color:#000
 
-    A[User Uploads Bank Statement PDF] --> B[Parser Generator]
-    B --> C[Extract Transactions using Camelot/pdfplumber]
-    C --> D[Validation Layer (Check Schema/CSV)]
-    D --> E{Parsing Successful?}
-    E -- Yes --> F[Save & Export Clean Data (CSV/JSON)]
-    E -- No --> G[Retry with Self-Debug Loop]
-    G --> H[Adjust Parser Parameters / Fallback Method]
+    A[User uploads bank statement PDF] --> B[Parser generator]
+    B --> C[Extract transactions using Camelot/pdfplumber]
+    C --> D[Validation layer (check schema/CSV)]
+    D --> E{Parsing successful?}
+    E -- Yes --> F[Save and export clean data (CSV/JSON)]
+    E -- No --> G[Retry with self-debug loop]
+    G --> H[Adjust parser parameters / fallback method]
     H --> B
