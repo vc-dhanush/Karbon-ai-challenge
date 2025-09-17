@@ -60,32 +60,16 @@ This makes the project scalable, robust, and production-ready.
 ---
 
 
-Project Tree
-Carbon-AI/
-│── agent.py                # Core agent logic
-│── app.py                  # Streamlit UI for interaction
-│── requirements.txt        # Dependencies
-│── README.md               # Documentation (this file)
-│
-├── data/
-│   └── icici/icici_sample.pdf   # Example input file
-│
-├── custom_parsers/
-│   └── icici_parser.py      # Bank-specific parser
-│
-└── tests/
-    └── test_agent.py        # Unit tests
+
+
 
 Requirements
-
 Python 3.13
 
 Virtual environment recommended
-
 Install dependencies:
 
 pip install -r requirements.txt
-
 How to Run
 
 Clone the repository:
@@ -97,10 +81,7 @@ cd Carbon-AI
 Run the agent:
 
 python agent.py --target icici
-
-
 Launch the Streamlit UI (optional):
-
 streamlit run app.py
 
 
@@ -109,7 +90,7 @@ Run tests:
 pytest
 
 Demo
-<p align="center"> <img src="https://github.com/your-username/Carbon-AI/assets/demo.gif" width="600" /> </p>
+<p align="center"> <img src="https://github.com/vc-dhanush/Karbon-ai-challenge" width="600" /> </p>
 Key Learnings
 
 Designing autonomous agents with retry/self-correcting loops
@@ -127,20 +108,7 @@ Carbon AI showcases practical AI workflow design, modular architecture, and auto
 It demonstrates the ability to plan, implement, and deliver real-world solutions, making it a strong project for HRs and interviewers to evaluate.
 
 <p align="center">Built with dedication by <b>Dhanush</b></p> ```
-
-This version:
-
-✅ No emojis
-
-✅ GitHub-compatible Mermaid diagram
-
-✅ Professional and human-written
-
-✅ Explicit Python version
-
-✅ Detailed project explanation and learnings
-## Flow of Work  
-
+Flow of Work
 ```mermaid
 flowchart TD
     style A fill:#7FFFD4,stroke:#333,stroke-width:2px,color:#000
