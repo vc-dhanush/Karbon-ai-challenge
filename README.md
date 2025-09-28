@@ -8,6 +8,7 @@
 </p>
 
 ---
+<img width="1019" height="577" alt="Screenshot 2025-09-28 192708" src="https://github.com/user-attachments/assets/80476677-0f32-44e7-846b-f730d804fa0e" />
 
 ## Introduction  
 
